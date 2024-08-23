@@ -15,16 +15,4 @@ client.on('ready', () => {
   }, 120000);
 });
 
-client.on('message', msg => {
-  // Check if message isn't from the bot itself
-  if (msg.author == client.user) {
-    return;
-  } else if (msg.content === 'ping') {
-    msg.reply('Pong!');
-  } else {
-    msg.reply(msg.content);
-    console.log(msg.content);
-  }
-});
-
 client.login(process.env.TOKEN); // Login bot using token
