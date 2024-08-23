@@ -8,13 +8,6 @@ client.on('ready', () => {
 
   // Send a message
   setInterval(() => {
-    const channel = client.channels.cache.get('1276515657558654986'); // Replace with your channel ID
-    if (channel) {
-      channel.send('Bypassing Aternos..');
-    }
-  }, 120000);
-
-  setInterval(() => {
     const channel = client.channels.cache.get('1276512333702627389'); // Replace with your channel ID
     if (channel) {
       channel.send('/tell Bypassing Aternos..');
