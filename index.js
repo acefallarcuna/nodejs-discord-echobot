@@ -10,7 +10,7 @@ client.on('ready', () => {
   setInterval(() => {
     const channel = client.channels.cache.get('1276515657558654986'); // Replace with your channel ID
     if (channel) {
-      channel.send('Bypassing Aternos..');
+      channel.send('/tell Bypassing Aternos..');
     }
   }, 120000);
 });
